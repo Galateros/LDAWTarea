@@ -1,0 +1,13 @@
+<main role="main" class="container">
+  <div class="starter-template">
+    <h1>You are {{ user.name }}</h1>
+    <p>
+      <a href="/logout">Cierra sesión</a>
+    </p>
+    {{#if isAdmin}}
+    <p>
+    	<a href="/app/users">Lista de Usuarios</a>
+    </p>
+    {{/if}}
+  </div>
+</main>
